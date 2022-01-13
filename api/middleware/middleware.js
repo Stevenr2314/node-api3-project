@@ -2,7 +2,7 @@ const Users = require('../users/users-model')
 const Posts = require('../posts/posts-model')
 
 function logger(req, res, next) {
-  console.log(`${req.method} to ${req.url} at [${new Date().toISOString}]`)
+  console.log(`${req.method} to ${req.url} at [${new Date().toISOString()}]`)
   next()
 }
 
